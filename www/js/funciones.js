@@ -1,7 +1,7 @@
 	
 	//Función para cargar los radio buttons
 			function init(){
-				$.getJSON('http://localhost/respuesta2.php', function(data){
+				$.getJSON('http://192.168.137.95/respuesta2.php', function(data){
 					console.log(JSON.stringify(data));
 					var datos;
 					
@@ -23,7 +23,7 @@
 
 	//Función para verificar las preguntas correctas
 	function procesamiento_preguntas(){
-			$.getJSON('http://localhost/respuesta2.php', function(data){
+			$.getJSON('http://192.168.137.95/respuesta2.php', function(data){
 				var contador=0;
 				var aciertos=[];
 				
